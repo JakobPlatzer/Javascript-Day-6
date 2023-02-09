@@ -103,4 +103,79 @@ for(let val of JSON.parse(employees)) {
 `;
 }
 
+
+
 // Advanced Exercise 
+
+let books = `[{
+    "title" : "Game Of Thrones",
+    "author" : "George RR Martin",
+    "read" : "true",
+    "cover" : "#"
+}, {
+    "title" : "Dune",
+    "author" : "Frank Herbert",
+    "read" : "true",
+    "cover" : "#"
+}, {
+    "title" : "Winter Soldier",
+    "author" : "Daniel Mason",
+    "read" : "false",
+    "cover" : "#"
+}, {
+    "title" : "The Road",
+    "author" : "Cormac MacCarthy",
+    "read" : "false",
+    "cover" : "#"
+}, {
+    "title" : "The Lord Of The Rings",
+    "author" : "J.R.R. Tolkien",
+    "read" : "true",
+    "cover" : "#"
+}, {
+    "title" : "1984",
+    "author" : "George Orwell",
+    "read" : "true",
+    "cover" : "#"
+}, {
+    "title" : "East Of Eden",
+    "author" : "John Steinbeck",
+    "read" : "false",
+    "cover" : "#"
+}, {
+    "title" : "Wheel Of Time",
+    "author" : "Robert Jordan",
+    "read" : "true",
+    "cover" : "#"
+}, {
+    "title" : "Moby Dick",
+    "author" : "Herman Melville",
+    "read" : "true",
+    "cover" : "#"
+}, {
+    "title" : "A Thousand Splendid Suns",
+    "author" : "Khaled Hosseini",
+    "read" : "true",
+    "cover" : "#"
+}]`
+
+for(let val of JSON.parse(books)) {
+    if (val.read = "true"){
+    document.getElementById("container").innerHTML +=`
+    <div class="card bg-success" style="width: 18rem;">
+  <img src=${val.cover} class="card-img-top" alt=${val.title}>
+  <div class="card-body">
+    <h5 class="card-title">${val.title}</h5>
+    <p class="card-text">by: ${val.author}</p>
+  </div>
+</div>`} else {
+    document.getElementById("container").innerHTML +=`
+<div class="card bg-danger" style="width: 18rem;">
+<img src=${val.cover} class="card-img-top" alt=${val.title}>
+<div class="card-body">
+<h5 class="card-title">${val.title}</h5>
+<p class="card-text">by: ${val.author}</p>
+</div>
+</div>`
+};
+}
