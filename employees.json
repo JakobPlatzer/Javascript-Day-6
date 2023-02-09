@@ -1,19 +1,4 @@
-// Basic Exercise 
-
-// let result = document.getElementById("result");
-
-// var sandwiches = { 
-//     sandwich": "hamburger", 
-//     calories: 260, };
-// var fries = { 
-//     fries_size": "Large French Fries", 
-//     calories: 570, };
-
-// result.innerHTML = `My favorite sandwich is a ${sandwiches.sandwich} which has approximately ${sandwiches.calories} calories, along with it I enjoy eating ${fries.fries_size} which have about ${fries.calories} calories.`
-
-// Intermediate Exercise 
-
-let employees = `[{
+[{
     "id" : "001",
     "firstName" : "Gerald",
     "lastName" : "Mustermann",
@@ -83,24 +68,4 @@ let employees = `[{
     "email" : "franz.kneissl@email.com",
     "jobTitle" : "Delivery driver part-time",
     "Salary" : "1400€"
-}]`
-
-
-// let employees = require('employees.json');
-
-
-
-for(let val of JSON.parse(employees)) {
-    document.getElementById("employeeTable").innerHTML +=`
-            <tr>
-              <td scope="row">${val.id}</td>
-              <td>${val.firstName}</td>
-              <td>${val.lastName}</td>
-              <td>${val.email}</td>
-              <td>${val.jobTitle}</td>
-              <td>${val.Salary}</td>
-            </tr>
-`;
-}
-
-// Advanced Exercise 
+}]

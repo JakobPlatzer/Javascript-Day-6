@@ -1,4 +1,4 @@
-let employees = [{
+ #employeeData.json = {
     "id" : "001",
     "firstName" : "Gerald",
     "lastName" : "Mustermann",
@@ -68,4 +68,4 @@ let employees = [{
     "email" : "franz.kneissl@email.com",
     "jobTitle" : "Delivery driver part-time",
     "Salary" : "1400€"
-}]
+}
