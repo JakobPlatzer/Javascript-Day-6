@@ -160,8 +160,8 @@ let books = `[{
 }]`
 
 for(let val of JSON.parse(books)) {
-    if (val.read = "true"){
-    document.getElementById("container").innerHTML +=`
+    if (val.read = true){
+    document.getElementById("row").innerHTML +=`
     <div class="card bg-success" style="width: 18rem;">
   <img src=${val.cover} class="card-img-top" alt=${val.title}>
   <div class="card-body">
@@ -169,7 +169,7 @@ for(let val of JSON.parse(books)) {
     <p class="card-text">by: ${val.author}</p>
   </div>
 </div>`} else {
-    document.getElementById("container").innerHTML +=`
+    document.getElementById("row").innerHTML +=`
 <div class="card bg-danger" style="width: 18rem;">
 <img src=${val.cover} class="card-img-top" alt=${val.title}>
 <div class="card-body">
